@@ -2,6 +2,7 @@ const cors = require('cors');
 
 const corsWhitelist = [
   'http://localhost:8000',
+  'https://www.codementor.io',
 ];
 const corsConfig = {
   origin: (origin, callback) => {
