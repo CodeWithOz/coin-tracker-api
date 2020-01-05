@@ -20,7 +20,6 @@ const appRouter = app => {
   app.use(cors(corsConfig));
 
   app.get('/', (req, res) => {
-    console.log(JSON.stringify(res, null, 2));
     res.json({ msg: 'Test message, this request was succesful!' });
   });
 };
