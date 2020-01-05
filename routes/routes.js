@@ -19,6 +19,7 @@ const appRouter = app => {
   app.use(cors(corsConfig));
 
   app.get('/', (req, res) => {
+    console.log(JSON.stringify(res, null, 2));
     res.status(200).send('Welcome to Coin Tracker API!');
   });
 };
