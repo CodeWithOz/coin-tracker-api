@@ -10,7 +10,7 @@ const requestOptions = {
     'convert': 'USD',
   },
   headers: {
-    'X-CMC-PRO_API_KEY': COIN_MARKET_CAP_API_KEY,
+    'X-CMC_PRO_API_KEY': COIN_MARKET_CAP_API_KEY,
   },
   json: true,
   gzip: true,
