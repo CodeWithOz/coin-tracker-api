@@ -23,7 +23,7 @@ module.exports = {
         cb(response);
       }
     }).catch(err => {
-      console.log('Something went wrong:', err);
+      console.log('Something went wrong:', err.error.status.error_message);
     });
   },
 };
