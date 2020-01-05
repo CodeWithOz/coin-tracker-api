@@ -20,7 +20,7 @@ const appRouter = app => {
 
   app.get('/', (req, res) => {
     console.log(JSON.stringify(res, null, 2));
-    res.status(200).send('Welcome to Coin Tracker API!');
+    res.json({ msg: 'Test message, this request was succesful!' });
   });
 };
 
