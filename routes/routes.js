@@ -1,4 +1,5 @@
 const cors = require('cors');
+const { getCMCData } = require('../requests/requests');
 
 const corsWhitelist = [
   'http://localhost:8000',
@@ -20,7 +21,9 @@ const appRouter = app => {
   app.use(cors(corsConfig));
 
   app.get('/', (req, res) => {
-    res.json({ msg: 'Test message, this request was succesful!' });
+    getCMCData(cmcData => {
+      res.json({ cmcData });
+    });
   });
 };
 
