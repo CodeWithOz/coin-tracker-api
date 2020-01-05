@@ -19,6 +19,7 @@ const requestOptions = {
 module.exports = {
   getCMCData: cb => {
     rp(requestOptions).then(response => {
+      console.log('Response succeeded.');
       if (typeof cb === 'function') {
         cb(response);
       }
