@@ -24,6 +24,6 @@ routes(app);
 /**
  * Server Activation
  */
-const server = app.listen(3000, function() {
+const server = app.listen(3500, function() {
   console.log(`app running on port ${server.address().port}`);
 });
