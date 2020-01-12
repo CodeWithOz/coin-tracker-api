@@ -1,10 +1,7 @@
 const cors = require('cors');
 const { getCMCData } = require('../requests/requests');
 
-const corsWhitelist = [
-  'http://localhost:8000',
-  'https://www.codementor.io',
-];
+const corsWhitelist = ['http://localhost:8000', 'http://localhost:3000'];
 const corsConfig = {
   origin: (origin, callback) => {
     if (corsWhitelist.indexOf(origin) !== -1) {
